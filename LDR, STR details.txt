@@ -1,0 +1,60 @@
+The LDR instruction:
+  Cycles:
+  1. Read the contents of Rn: nsel->100 Rn   --->this is the same as sGetA
+                              loada-> 1
+
+  2. Add the sximm5 value: asel-> 0
+                           bsel-> 1
+                           aluop->00
+                           loadc->1
+
+                           (now the value should be available at the output)
+
+  3. Now load the result to dataAdress: load_addr->1
+
+
+  4. Set mem_cmd                        mem_cmd->MREAD
+                                        addr_sel->0
+
+  5. waiting for memory+ writing to reg:
+                                        mem_cmd->MREAD
+                                        addr_sel->0
+                                        ------------
+                                        + writing to register
+                                        vsel->11 (mdata)
+                                        nsel->010 Rd
+                                        write->1
+
+
+The STR instruction:
+  Cycles:
+  1. Read the contents of Rn: nsel->100 Rn
+                              loada-> 1
+
+  2. Add the sximm5 value:  asel-> 0
+                            bsel-> 1
+                            aluop->00
+                            loadc->1
+
+  (now the value should be available at the output)
+
+  3. Now load the result to dataAdress: load_addr->1
+
+sSTR_RdToB
+sSTR_BtoDOUT
+sSTR_MWrite
+
+  4a. Now read the contents of Register Rd and get the output on datapath_out:
+                          nsel->010
+                          loadb = 1
+
+  4b. asel=1
+      bsel=0
+      aluop=00
+      loadc=1
+
+  5. the finite state machine for your store instruction should set addr_sel to 0 so that
+mem_addr is set to this value and set m_cmd to indicate a memory write operation:
+
+    addr_sel=0
+    mem_cmd= `MWRITE
