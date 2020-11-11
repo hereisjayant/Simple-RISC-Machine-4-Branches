@@ -186,15 +186,15 @@ endmodule
         2'b01: b= a1;
         2'b10: b= a2;
         2'b11: b= a3;
-        default: b= 16'bx; // catches errors
+        default: b= {k{1'bx}}; // catches errors
       endcase
     end
 
   endmodule
 
   //Added for lab8
-  //3-Input-Binary-Select-MUX
-    module Mux3b(a2, a1, a0, s, b);
+  //3-Input-1-hot-Select-MUX
+    module Mux3h(a2, a1, a0, s, b);
 
       parameter k = 9;
       input [k-1:0] a2, a1, a0; //inputs
@@ -204,9 +204,9 @@ endmodule
 
       always @ ( * ) begin
         case (s)
-          3'b00: b= a0;
-          3'b01: b= a1;
-          3'b10: b= a2;
+          3'b001: b= a0;
+          3'b010: b= a1;
+          3'b100: b= a2;
           default: b= {k{1'bx}}; // catches errors
         endcase
       end
