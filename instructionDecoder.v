@@ -12,7 +12,8 @@ module InstructionDecoder(iRegToiDec,//Inputs to the Decoder
                             sximm8,
                             shift,
                             readnum,
-                            writenum);
+                            writenum,
+                            b_cond);
 
 
   // Inputs/outputs to the module
@@ -28,6 +29,7 @@ module InstructionDecoder(iRegToiDec,//Inputs to the Decoder
   output [1:0] shift;
   output [2:0] readnum;
   output [2:0] writenum;
+  output [2:0] b_cond;
 
 //------------------------------------------------------------------------------
 
@@ -65,6 +67,9 @@ module InstructionDecoder(iRegToiDec,//Inputs to the Decoder
   //outputs of the MUX
   assign readnum = muxOutNsel;
   assign writenum = muxOutNsel;
+
+  //Output to b_cond:
+  assign b_cond = Rn;
 
 endmodule
 

@@ -204,6 +204,7 @@ endmodule
 
       always @ ( * ) begin
         case (s)
+          3'b000: b= a0;
           3'b001: b= a0;
           3'b010: b= a1;
           3'b100: b= a2;

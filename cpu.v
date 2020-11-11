@@ -4,6 +4,9 @@
 //3. read_data: input to the Instruction register
 
 
+`define SW                      5
+
+
 module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 
 //I/Os
@@ -17,6 +20,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
   output N, V, Z; //give the value of negative, overflow
                     //and zero status register bits.
                     //w set to 1 if state machine is in the reset state and is waiting for s to be 1
+  output[`SW-1:0] current_state;
 
 //------------------------------------------------------------------------------
 
@@ -40,10 +44,19 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 
   //To PC reset MUX:
     wire reset_pc;
+    wire [8:0] PCSelector_to_PCReset;
+
+  //To PC Selector Mux:
+    wire[8:0] BLRegOut;
+    wire[2:0] pc_select;
+
+  //To BL register:
+   wire load_bl;
+
 
   //To ProgramCounter
     wire load_pc;  //from FSM
-    wire [8:0] next_pc;  //from resetPCMUX
+    wire [8:0] next_pc;  //from PCResetMux
 
   //To DataAdress Register
     wire [8:0] datapath_outToDataAddress;
@@ -62,6 +75,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
     wire [1:0] shift;
     wire [2:0] readnum;
     wire [2:0] writenum;
+    wire [2:0] b_cond;
 
     //from the FSM
     wire [1:0] vsel;    //input to the REGFILE
@@ -90,9 +104,19 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
 
 //------------------------------------------------------------------------------
 
+  //NOTE: Lab 8 Addition:
+  //PC Selector Mux:
+  Mux3h #(9) PCSelectorMux(.a2(BLRegOut), .a1(PC+ 1'b1 + sximm8), .a0(PC + 1'b1),
+                          .s(pc_select), .b(PCSelector_to_PCReset));
+
   //PC Reset Mux
-  Mux2a #(9) PCResetMux(.a1(9'b0), .a0(PC + 9'b1),
+  Mux2a #(9) PCResetMux(.a1(9'b0), .a0(PCSelector_to_PCReset),
                         .s(reset_pc), .b(next_pc));
+
+//------------------------------------------------------------------------------
+  //BL Register:
+  vDFFE #(9) BLRegister(clk, load_bl, PC, BLRegOut);
+
 
 //------------------------------------------------------------------------------
 
@@ -124,7 +148,8 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
                               sximm8,
                               shift,
                               readnum,
-                              writenum);
+                              writenum,
+                              b_cond);
 
 
 //------------------------------------------------------------------------------
@@ -135,6 +160,9 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
                 reset,
                 opcode,
                 op,
+                V,N,Z,
+                b_cond, //Added for lab8
+
                     // outputs for lab7:
                 load_ir,  //enable for instruction register
                 load_addr, //enable for Address register
@@ -157,7 +185,11 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
                     //status register
                 loads,
                     //Use the 1-HOT select for Rn | Rd | Rm
-                nsel
+                nsel,
+                    //Lab8 additions for PC:
+                pc_select,
+                load_bl,
+                current_state
                 );
 
 
