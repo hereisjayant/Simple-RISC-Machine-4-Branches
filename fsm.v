@@ -62,7 +62,7 @@ module control(   //inputs to fsm
                   //status register
               loads,
                   //Use the 1-HOT select for Rn | Rd | Rm
-              nsel,
+              nsel
               );
 
                 //inputs to fsm

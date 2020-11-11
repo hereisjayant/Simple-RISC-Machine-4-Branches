@@ -191,3 +191,24 @@ endmodule
     end
 
   endmodule
+
+  //Added for lab8
+  //3-Input-Binary-Select-MUX
+    module Mux3b(a2, a1, a0, s, b);
+
+      parameter k = 9;
+      input [k-1:0] a2, a1, a0; //inputs
+      input [2:0] s; //1 hot Select
+      output [k-1:0] b;
+      reg [k-1:0] b;
+
+      always @ ( * ) begin
+        case (s)
+          3'b00: b= a0;
+          3'b01: b= a1;
+          3'b10: b= a2;
+          default: b= {k{1'bx}}; // catches errors
+        endcase
+      end
+
+    endmodule

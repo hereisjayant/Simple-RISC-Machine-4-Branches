@@ -157,7 +157,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
                     //status register
                 loads,
                     //Use the 1-HOT select for Rn | Rd | Rm
-                nsel,
+                nsel
                 );
 
 
@@ -167,7 +167,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
   //Datapath
   datapath DP     (read_data,  //NOTE: **mdata** is the 16-bit output of a memory block (Lab 7)
                   sximm8, //sign ex. lower 8-bits of the instruction register.
-                  8'b0,     //“program counter” input lab8
+                  PC,     //“program counter” input lab8
 
                   vsel, //input to the first multiplexer b4 regfile
 
