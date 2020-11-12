@@ -12,36 +12,11 @@
 # Compile of cpu.v was successful.
 # Compile of datapath.v was successful.
 # Compile of fsm.v was successful.
-# 11 compiles, 1 failed with no errors.
-# Compile of fsm_tb.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab8_autograder_check.v was successful.
-# Compile of lab8_stage2_tb.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of lab8_top.v failed with 1 errors.
-# 12 compiles, 1 failed with 1 error.
-# Compile of fsm_tb.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab8_autograder_check.v was successful.
-# Compile of lab8_stage2_tb.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
 # Compile of lab8_top.v was successful.
 # 12 compiles, 0 failed with no errors.
 vsim -gui work.lab8_check_tb
 # vsim -gui work.lab8_check_tb 
-# Start time: 12:11:38 on Nov 12,2020
+# Start time: 16:17:32 on Nov 12,2020
 # Loading work.lab8_check_tb
 # Loading work.lab8_top
 # Loading work.cpu
@@ -66,45 +41,31 @@ vsim -gui work.lab8_check_tb
 # Loading work.triStateBuffer
 # Loading work.enableSwitches
 # Loading work.enableLEDs
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v(109): [PCDPC] - Port size (9) does not match connection size (16) for port 'a1'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v(197).
-#    Time: 0 ps  Iteration: 0  Instance: /lab8_check_tb/DUT/CPU/PCSelectorMux File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v(200): [PCDPC] - Port size (8) does not match connection size (9) for port 'PC'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v(15).
-#    Time: 0 ps  Iteration: 0  Instance: /lab8_check_tb/DUT/CPU/DP File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
-# Trace back: Error QStructure::sort: invalid command name ""
-#   <6:proc:11: ::QStructure::sort .main_pane.structure 0 descending
-#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 descending
-#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 descending
-#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 descending
-#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
-#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
 add wave -position end  sim:/lab8_check_tb/CLOCK_50
-add wave -position end  sim:/lab8_check_tb/HEX0
-add wave -position end  sim:/lab8_check_tb/HEX1
-add wave -position end  sim:/lab8_check_tb/HEX2
-add wave -position end  sim:/lab8_check_tb/HEX3
-add wave -position end  sim:/lab8_check_tb/HEX4
-add wave -position end  sim:/lab8_check_tb/HEX5
-add wave -position end  sim:/lab8_check_tb/KEY
 add wave -position end  sim:/lab8_check_tb/LEDR
+add wave -position 1  sim:/lab8_check_tb/KEY
 add wave -position end  sim:/lab8_check_tb/SW
 add wave -position end  sim:/lab8_check_tb/err
 run -all
-# Break key hit
-# Break in Module Mux4b at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v line 183
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
+add wave -position end  sim:/lab8_check_tb/DUT/CPU/PC
+add wave -position end  sim:/lab8_check_tb/DUT/CPU/pc_select
+add wave -position 6  sim:/lab8_check_tb/DUT/CPU/FSM/current_state
+run -all
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(68)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 68
 restart -f
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v(109): [PCDPC] - Port size (9) does not match connection size (16) for port 'a1'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v(197).
-#    Time: 0 ps  Iteration: 0  Instance: /lab8_check_tb/DUT/CPU/PCSelectorMux File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v(200): [PCDPC] - Port size (8) does not match connection size (9) for port 'PC'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v(15).
-#    Time: 0 ps  Iteration: 0  Instance: /lab8_check_tb/DUT/CPU/DP File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
-# Error opening C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/[PCDPC] - Port size (9) does not match connection size 
-# Path name 'C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/[PCDPC] - Port size (9) does not match connection size ' doesn't exist.
-# Error opening C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/[PCDPC] - Port size (9) does not match connection size 
-# Path name 'C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/[PCDPC] - Port size (9) does not match connection size ' doesn't exist.
-restart -f
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v(109): [PCDPC] - Port size (9) does not match connection size (16) for port 'a1'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v(197).
-#    Time: 0 ps  Iteration: 0  Instance: /lab8_check_tb/DUT/CPU/PCSelectorMux File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
-# ** Warning: (vsim-3015) C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v(200): [PCDPC] - Port size (8) does not match connection size (9) for port 'PC'. The port definition is at: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v(15).
-#    Time: 0 ps  Iteration: 0  Instance: /lab8_check_tb/DUT/CPU/DP File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
 # Compile of fsm_tb.v was successful.
 # Compile of instructionDecoder.v was successful.
 # Compile of lab8_autograder_check.v was successful.
@@ -144,26 +105,11 @@ restart -f
 # Loading work.enableSwitches
 # Loading work.enableLEDs
 run -all
-# Break key hit
-# Simulation stop requested.
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/PC
-restart -f
-run -all
-# Break key hit
-# Break in Module control at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm.v line 171
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/FSM/present_state
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/FSM/pc_select
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/PCSelectorMux/a0
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/PCSelectorMux/a1
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/PCSelectorMux/a2
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/PCSelectorMux/b
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/PCSelectorMux/k
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/PCSelectorMux/s
-restart -f
-run -all
-# Break key hit
-# Break in Module Mux4b at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v line 184
-add wave -position end  sim:/lab8_check_tb/DUT/CPU/DP/REGFILE/data_out
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: 00c8
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
+#    Time: 1825 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
 add wave -position end  sim:/lab8_check_tb/DUT/CPU/DP/REGFILE/R0
 add wave -position end  sim:/lab8_check_tb/DUT/CPU/DP/REGFILE/R1
 add wave -position end  sim:/lab8_check_tb/DUT/CPU/DP/REGFILE/R2
@@ -174,255 +120,32 @@ add wave -position end  sim:/lab8_check_tb/DUT/CPU/DP/REGFILE/R6
 add wave -position end  sim:/lab8_check_tb/DUT/CPU/DP/REGFILE/R7
 restart -f
 run -all
-# Break key hit
-# Simulation stop requested.
-# Compile of fsm_tb.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab8_autograder_check.v was successful.
-# Compile of lab8_stage2_tb.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of lab8_top.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab8_check_tb
-# Loading work.lab8_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux3h
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-run -all
 # FAILED: mem[0x14] (result) is wrong;
+#  Actual: 00c8
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
-#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+#    Time: 1825 ps  Iteration: 2  Instance: /lab8_check_tb
 # Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
-# Compile of fsm_tb.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab8_autograder_check.v was successful.
-# Compile of lab8_stage2_tb.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of lab8_top.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab8_check_tb
-# Loading work.lab8_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux3h
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-run -all
-# FAILED: mem[0x14] (result) is wrong;
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
-#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
-# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[25]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[24]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[23]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[22]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[21]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[20]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[19]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[18]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[17]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[16]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[15]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[14]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[13]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[12]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[11]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[10]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[9]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[8]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[7]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[6]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[5]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[4]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[3]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[2]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[1]
-add wave -position end  sim:/lab8_check_tb/DUT/MEM/mem[0]
-restart -f
-run -all
-# FAILED: mem[0x14] (result) is wrong;
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
-#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
-# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
-# Compile of fsm_tb.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab8_autograder_check.v was successful.
-# Compile of lab8_stage2_tb.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of lab8_top.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab8_check_tb
-# Loading work.lab8_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux3h
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-run -all
-# FAILED: mem[0x14] (result) is wrong;
-#  Actual:47837
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
-#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
-# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
-# Compile of fsm_tb.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab8_autograder_check.v was successful.
-# Compile of lab8_stage2_tb.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of lab8_top.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab8_check_tb
-# Loading work.lab8_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux3h
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-run -all
-# FAILED: mem[0x14] (result) is wrong;
-#  Actual:47837
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
-#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
-# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
-# Compile of fsm_tb.v was successful.
-# Compile of instructionDecoder.v was successful.
-# Compile of lab8_autograder_check.v was successful.
-# Compile of lab8_stage2_tb.v was successful.
-# Compile of ram.v was successful.
-# Compile of regfile.v was successful.
-# Compile of shifter.v was successful.
-# Compile of alu.v was successful.
-# Compile of cpu.v was successful.
-# Compile of datapath.v was successful.
-# Compile of fsm.v was successful.
-# Compile of lab8_top.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart -f
-# Loading work.lab8_check_tb
-# Loading work.lab8_top
-# Loading work.cpu
-# Loading work.vDFFE
-# Loading work.Mux3h
-# Loading work.Mux2a
-# Loading work.InstructionDecoder
-# Loading work.Mux3H
-# Loading work.control
-# Loading work.vDFF
-# Loading work.datapath
-# Loading work.regfile
-# Loading work.Dec
-# Loading work.Mux8
-# Loading work.ALU
-# Loading work.AddSub
-# Loading work.Adder1
-# Loading work.shifter
-# Loading work.Mux4b
-# Loading work.equals
-# Loading work.RAM
-# Loading work.triStateBuffer
-# Loading work.enableSwitches
-# Loading work.enableLEDs
-run -all
-# FAILED: mem[0x14] (result) is wrong;
-#  Actual: badd
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
-#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
-# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
