@@ -1,7 +1,7 @@
 module lab8_check_tb;
   reg [3:0] KEY;
   reg [9:0] SW;
-  wire [9:0] LEDR; 
+  wire [9:0] LEDR;
   wire [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
   reg err;
   reg CLOCK_50;
@@ -55,11 +55,11 @@ module lab8_check_tb;
     if (DUT.CPU.DP.REGFILE.R0 !== 16'h4) begin err = 1; $display("FAILED: R0 incorrect at exit; did LDR R0,[R0] not work?"); $stop; end
 
     // check memory contents for result
-    if (DUT.MEM.mem[8'h14] === 16'h0) begin 
-      err = 1; 
+    if (DUT.MEM.mem[8'h14] === 16'h0) begin
+      err = 1;
       $display("FAILED: mem[0x14] (result) is wrong;");
       if (DUT.CPU.DP.REGFILE.R3 === 16'h10)
-        $display("        hint: check if your BLT instruction skipped MOV R3, result"); 
+        $display("        hint: check if your BLT instruction skipped MOV R3, result");
       $stop; 
     end
     if (DUT.MEM.mem[8'h14] !== 16'd850)  begin err = 1; $display("FAILED: mem[0x14] (result) is wrong;"); $stop; end

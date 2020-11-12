@@ -4,12 +4,17 @@
 //inputs to mem_cmd for read/write operation
 `define MREAD       2'b01
 `define MWRITE      2'b10
+`define sHALT       5'b01_100 //For STR/LDR
 
-module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
+
+module lab8_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,CLOCK_50);
   input [3:0] KEY;
   input [9:0] SW;
+  input CLOCK_50;
   output [9:0] LEDR;
   output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+
+  wire clk = CLOCK_50;
 
 //------------------------------------------------------------------------------
 
@@ -26,7 +31,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
   wire N, V, Z; //give the value of negative, overflow
                     //and zero status register bits.
                     //w set to 1 if state machine is in the reset state and is waiting for s to be 1
-
+  wire [`SW-1:0] current_state;
   //Equals Comparators:
   wire equalsMRead;
   wire equalsMWrite;
@@ -41,7 +46,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
 //Declared modules:
 
   //CPU
-  cpu CPU(.clk        (~KEY[0]),
+  cpu CPU(.clk        (clk),
           .reset      (~KEY[1]),
           .read_data  (read_data),
           .mem_cmd    (mem_cmd),
@@ -52,6 +57,10 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
           .Z          (Z),
           .current_state(current_state)
           );
+
+//------------------------------------------------------------------------------
+  //HALT state truns LEDR[8] on
+  assign LEDR[8] = (current_state == `sHALT) ? 1'b1:1'b0;
 
 //------------------------------------------------------------------------------
   //Comparator for MREAD
@@ -68,7 +77,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
 //------------------------------------------------------------------------------
 
   //RAM (memory)
-  RAM MEM(.clk             (~KEY[0]),
+  RAM MEM(.clk             (clk),
           .read_address    (mem_addr),
           .write_address   (mem_addr),
           .write           (equalsMWrite && msel),
@@ -97,7 +106,7 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
 
 //------------------------------------------------------------------------------
 
-  vDFFE #(8) Register_for_LEDS(~KEY[0], ledEnable, write_data[7:0], LEDR[7:0]) ;
+  vDFFE #(8) Register_for_LEDS(clk, ledEnable, write_data[7:0], LEDR[7:0]) ;
 
 //------------------------------------------------------------------------------
 
