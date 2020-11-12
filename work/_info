@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/CPEN211Lab7
 vAdder1
-Z0 !s110 1605184531
+Z0 !s110 1605204033
 !i10b 1
 !s100 oL@kYLU@a=66D=COTcC0j0
 IbK7``QFYdJRX7iMm?3<7D2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1605184531.000000
+Z7 !s108 1605204033.000000
 Z8 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/alu.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/alu.v|
 !i113 1
@@ -75,13 +75,13 @@ R10
 R11
 n@a@l@u
 vcontrol
-Z12 !s110 1605184532
+Z12 !s110 1605204035
 !i10b 1
-!s100 3EE^TFDLE[e;P;eDG3Ib23
-I;j1<I?zMkK6hb_J[MKRm22
+!s100 cz4d6KDDX4e_QSTn;R@b83
+I3NW`k[dPD0_QMl[;<6V=C3
 R1
 R2
-Z13 w1605184516
+Z13 w1605204024
 Z14 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm.v
 Z15 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm.v
 L0 74
@@ -89,20 +89,20 @@ R6
 r1
 !s85 0
 31
-R7
-Z16 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm.v|
-Z17 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm.v|
+Z16 !s108 1605204034.000000
+Z17 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm.v|
 !i113 1
 R10
 R11
 vcontrol_tb
-!s110 1605184528
+Z19 !s110 1605204031
 !i10b 1
 !s100 U:2N:g^c?VeJ^Q6MF]RzN2
 IAO257Vh2BMGadKd2lTmWf0
 R1
 R2
-Z18 w1604052067
+Z20 w1604052067
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm_tb.v
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm_tb.v
 L0 14
@@ -110,14 +110,14 @@ R6
 r1
 !s85 0
 31
-!s108 1605184528.000000
+Z21 !s108 1605204031.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/fsm_tb.v|
 !i113 1
 R10
 R11
 vcpu
-R0
+Z22 !s110 1605204034
 !i10b 1
 !s100 8:TDBAk77NHJ@CVjd:lKk3
 I:Dk52QNnc:<KKFP9OO8DM0
@@ -126,56 +126,56 @@ R2
 w1605180566
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v
-Z19 L0 10
+Z23 L0 10
 R6
 r1
 !s85 0
 31
-R7
+R16
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/cpu.v|
 !i113 1
 R10
 R11
 vdatapath
-R0
+R22
 !i10b 1
 !s100 Ra@[f?`2I[P;Q6j[3AWiL0
 I=49l>95Sc^=hz;2M@H^ni2
 R1
 R2
-Z20 w1605163912
-Z21 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
-Z22 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
+Z24 w1605163912
+Z25 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
+Z26 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v
 L0 13
 R6
 r1
 !s85 0
 31
-R7
-Z23 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v|
-Z24 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v|
+R16
+Z27 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/datapath.v|
 !i113 1
 R10
 R11
 vDec
-Z25 !s110 1605184530
+Z29 !s110 1605204032
 !i10b 1
 !s100 h9leJoEefIK7GbYHiScAc1
 IhGVm^08ez:^DUC=NfU>KZ2
 R1
 R2
-R18
-Z26 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v
-Z27 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v
+R20
+Z30 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v
+Z31 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v
 L0 61
 R6
 r1
 !s85 0
 31
-Z28 !s108 1605184530.000000
-Z29 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v|
-Z30 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v|
+Z32 !s108 1605204032.000000
+Z33 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v|
 !i113 1
 R10
 R11
@@ -187,17 +187,17 @@ R12
 I2bO=?TL4J;fjhgCV7@55D1
 R1
 R2
-Z31 w1605163247
-Z32 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v
-Z33 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v
+Z35 w1605163247
+Z36 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v
+Z37 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v
 L0 140
 R6
 r1
 !s85 0
 31
-Z34 !s108 1605184532.000000
-Z35 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v|
-Z36 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v|
+Z38 !s108 1605204035.000000
+Z39 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v|
+Z40 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_top.v|
 !i113 1
 R10
 R11
@@ -209,17 +209,17 @@ R12
 Ic0cZ`DF:Ybcc]`IXTM9Y52
 R1
 R2
-R31
-R32
-R33
+R35
+R36
+R37
 L0 131
 R6
 r1
 !s85 0
 31
-R34
-R35
-R36
+R38
+R39
+R40
 !i113 1
 R10
 R11
@@ -231,38 +231,38 @@ R12
 Ih=d5GZN@nK=7[8]_FEe@]1
 R1
 R2
-R31
-R32
-R33
+R35
+R36
+R37
 L0 122
 R6
 r1
 !s85 0
 31
-R34
-R35
-R36
+R38
+R39
+R40
 !i113 1
 R10
 R11
 vInstructionDecoder
-Z37 !s110 1605184529
+R19
 !i10b 1
 !s100 USjm8Tm6:Cibf_BiMONTK0
 IUObC]G]9GR[6m3Yl[aAO63
 R1
 R2
-Z38 w1605073075
-Z39 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v
-Z40 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v
+Z41 w1605073075
+Z42 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v
+Z43 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v
 L0 4
 R6
 r1
 !s85 0
 31
-Z41 !s108 1605184529.000000
-Z42 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v|
-Z43 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v|
+R21
+Z44 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v|
+Z45 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/instructionDecoder.v|
 !i113 1
 R10
 R11
@@ -289,7 +289,7 @@ r1
 R10
 R11
 vlab8_check_tb
-R37
+R19
 !i10b 1
 !s100 UHbA:n11:5ej0CgGn>kkc0
 Ij07;^965D4BLC5PUGaNMa1
@@ -303,14 +303,14 @@ R6
 r1
 !s85 0
 31
-R41
+R21
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v|
 !i113 1
 R10
 R11
 vlab8_stage2_tb
-R37
+R29
 !i10b 1
 !s100 C9;5c9mfFRz?0H67]e1AZ2
 Iz]Coi2@h3WcM<=Y8=@SOA2
@@ -324,7 +324,7 @@ R6
 r1
 !s85 0
 31
-R41
+R21
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_stage2_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_stage2_tb.v|
 !i113 1
@@ -337,38 +337,38 @@ R12
 I2=j`78aK@;m[NX9`80RdA1
 R1
 R2
-R31
-R32
-R33
+R35
+R36
+R37
 L0 11
 R6
 r1
 !s85 0
 31
-R34
-R35
-R36
+R38
+R39
+R40
 !i113 1
 R10
 R11
 vMux2a
-R0
+R22
 !i10b 1
 !s100 e[<A2XP?LkVU91;ViV51:2
 IQa60[I;<5gJ9FbbY<f_eK1
 R1
 R2
-R20
-R21
-R22
+R24
+R25
+R26
 L0 162
 R6
 r1
 !s85 0
 31
-R7
-R23
-R24
+R16
+R27
+R28
 !i113 1
 R10
 R11
@@ -381,124 +381,124 @@ I`EOYhi_0l=n_QAdai]kf:0
 R1
 R2
 w1605068414
-R21
-R22
-Z44 L0 197
+R25
+R26
+Z46 L0 197
 R6
 r1
 !s85 0
 31
 !s108 1605068647.000000
-R23
-R24
+R27
+R28
 !i113 1
 R10
 R11
 n@mux3b
 vMux3H
-R37
+R19
 !i10b 1
 !s100 l[YW9;6jk4idlhD[gS>_V0
 Ii<f>dQK@6j?Dc6KNXXPS_2
 R1
 R2
-R38
-R39
-R40
+R41
+R42
+R43
 L0 79
 R6
 r1
 !s85 0
 31
-R41
-R42
-R43
+R21
+R44
+R45
 !i113 1
 R10
 R11
 n@mux3@h
 vMux3h
-R0
+R22
 !i10b 1
 !s100 3odDFPd:=WFAh2b53RAjj3
 I1EMS?ZDoaobR7X[A9HdVm1
 R1
 R2
-R20
-R21
-R22
-R44
+R24
+R25
+R26
+R46
 R6
 r1
 !s85 0
 31
-R7
-R23
-R24
+R16
+R27
+R28
 !i113 1
 R10
 R11
 n@mux3h
 vMux4b
-R0
+R22
 !i10b 1
 !s100 KP<B1Q3OUAM0?=JO^_2_z2
 I3O?gZAbGnRc9zYCeP>oQm0
 R1
 R2
-R20
-R21
-R22
+R24
+R25
+R26
 L0 175
 R6
 r1
 !s85 0
 31
-R7
-R23
-R24
+R16
+R27
+R28
 !i113 1
 R10
 R11
 n@mux4b
 vMux8
-R25
+R29
 !i10b 1
 !s100 0JX6K?9MG_2B2V[3d?WQF2
 I2bT35gk^QhJ>iad[7UK:M0
 R1
 R2
-R18
-R26
-R27
+R20
+R30
+R31
 L0 90
 R6
 r1
 !s85 0
 31
-R28
-R29
-R30
+R32
+R33
+R34
 !i113 1
 R10
 R11
 n@mux8
 vRAM
-R25
+R29
 !i10b 1
 !s100 hEeO^7fVdWSNec[Red1og0
 ISmfI>DXjgfIDG7CXCO_481
 R1
 R2
-R18
+R20
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/ram.v
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/ram.v
-R19
+R23
 R6
 r1
 !s85 0
 31
-R41
+R32
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/ram.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/ram.v|
 !i113 1
@@ -506,34 +506,34 @@ R10
 R11
 n@r@a@m
 vregfile
-R25
+R29
 !i10b 1
 !s100 CQT=jAGS@Uci<jYPZf@H60
 InPkZLNRdI6i<VMD7782ZL0
 R1
 R2
-R18
-R26
-R27
+R20
+R30
+R31
 L0 3
 R6
 r1
 !s85 0
 31
-R28
-R29
-R30
+R32
+R33
+R34
 !i113 1
 R10
 R11
 vshifter
-R25
+R0
 !i10b 1
 !s100 m>Kz=dQgMg[AlTDBgH21m2
 Ioi>h=U80Q^Kgcm<:h2d_J0
 R1
 R2
-R18
+R20
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/shifter.v
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/shifter.v
 L0 3
@@ -541,7 +541,7 @@ R6
 r1
 !s85 0
 31
-R28
+R7
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/shifter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/shifter.v|
 !i113 1
@@ -554,17 +554,17 @@ R12
 ILk;YWCYN49A:5?cYKhmkB3
 R1
 R2
-R31
-R32
-R33
+R35
+R36
+R37
 L0 159
 R6
 r1
 !s85 0
 31
-R34
-R35
-R36
+R38
+R39
+R40
 !i113 1
 R10
 R11
@@ -575,17 +575,17 @@ R12
 IaA=e>X4JM5EOE9:HzJV422
 R1
 R2
-R31
-R32
-R33
+R35
+R36
+R37
 L0 150
 R6
 r1
 !s85 0
 31
-R34
-R35
-R36
+R38
+R39
+R40
 !i113 1
 R10
 R11
@@ -593,43 +593,43 @@ ntri@state@buffer
 vvDFF
 R12
 !i10b 1
-!s100 4HaRU8H2jMij16lD5IBC:0
-IKLn_c>^CBRcW@]o4WzoM50
+!s100 045BQ]CIa5a^ec@m<izMJ2
+Ik2QI=n7cFTLjAUWUHXgKk0
 R1
 R2
 R13
 R14
 R15
-L0 630
+L0 637
 R6
 r1
 !s85 0
 31
-R7
 R16
 R17
+R18
 !i113 1
 R10
 R11
 nv@d@f@f
 vvDFFE
-R25
+R29
 !i10b 1
 !s100 JEof;36XL<2i@dUE81:K83
 IHhIkHXfUjeT8EMn]QnWA<3
 R1
 R2
-R18
-R26
-R27
+R20
+R30
+R31
 L0 73
 R6
 r1
 !s85 0
 31
-R28
-R29
-R30
+R32
+R33
+R34
 !i113 1
 R10
 R11

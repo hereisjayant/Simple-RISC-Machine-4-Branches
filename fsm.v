@@ -350,21 +350,28 @@ module control(   //inputs to fsm
 //------------------------------------------------------------------------------
 //NOTE: Change both the states below this:
     // BL/BLX State(Branch and link) WriteReg on the orig
-      {`sBLoad, 5'bx, 6'bx}: nextSignals = {`sBLoad, 2'b01, 1'b1,      // {state_next, vsel, write,
+      {`sBLoad, 5'b01_010, 6'bx}: nextSignals = {`sBLX, 2'b00, 1'b1,      // {state_next, vsel, write,
+                                            1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
+                                            1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            3'b010, 1'b1   //pc_select, load_bl
+                                            }; // sB-> sIF1
+
+    // BL/BLX State(Branch and link) WriteReg on the orig
+      {`sBLoad, 5'bx, 6'bx}: nextSignals = {`sB, 2'b00, 1'b1,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b100, 1'b0, //    loadc, loads, nsel, load_ir
                                             1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
-                                            3'b000, 1'b0   //pc_select, load_bl
+                                            3'b010, 1'b1   //pc_select, load_bl
                                             }; // sB-> sIF1
-
 //------------------------------------------------------------------------------
 
     // BL/BLX State(Branch and link) WriteReg on the orig
-      {`sBLX, 5'bx, 6'bx}: nextSignals = {`sBLoad, 2'b01, 1'b1,      // {state_next, vsel, write,
+      {`sBLX, 5'bx, 6'bx}: nextSignals = {`sB, 2'b01, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
-                                            1'b0, 1'b0, 3'b100, 1'b0, //    loadc, loads, nsel, load_ir
+                                            1'b0, 1'b0, 3'b010, 1'b0, //    loadc, loads, nsel, load_ir
                                             1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
-                                            3'b000, 1'b0   //pc_select, load_bl
+                                            3'b100, 1'b0   //pc_select, load_bl
                                             }; // sB-> sIF1
 //------------------------------------------------------------------------------
 

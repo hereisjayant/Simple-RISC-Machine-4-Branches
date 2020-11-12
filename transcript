@@ -358,3 +358,142 @@ run -all
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(68)
 #    Time: 2335 ps  Iteration: 2  Instance: /lab8_check_tb
 # Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 68
+quit -sim
+# End time: 23:21:56 on Nov 12,2020, Elapsed time: 7:04:24
+# Errors: 22, Warnings: 2
+vsim -gui work.lab8_stage2_tb
+# vsim -gui work.lab8_stage2_tb 
+# Start time: 23:22:12 on Nov 12,2020
+# Loading work.lab8_stage2_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+add wave -position end  sim:/lab8_stage2_tb/CLOCK_50
+add wave -position end  sim:/lab8_stage2_tb/HEX0
+add wave -position end  sim:/lab8_stage2_tb/HEX1
+add wave -position end  sim:/lab8_stage2_tb/HEX2
+add wave -position end  sim:/lab8_stage2_tb/HEX3
+add wave -position end  sim:/lab8_stage2_tb/HEX4
+add wave -position end  sim:/lab8_stage2_tb/HEX5
+add wave -position end  sim:/lab8_stage2_tb/KEY
+add wave -position end  sim:/lab8_stage2_tb/LEDR
+add wave -position end  sim:/lab8_stage2_tb/SW
+add wave -position end  sim:/lab8_stage2_tb/break
+add wave -position end  sim:/lab8_stage2_tb/err
+run -all
+# PC = 000
+# PC = 001
+# PC = 002
+# PC = 003
+# PC = 004
+# PC = 005
+# PC = 006
+# PC = 007
+# PC = 008
+# PC = 009
+# Break key hit
+# Simulation stop requested.
+add wave -position end  sim:/lab8_stage2_tb/DUT/CPU/FSM/current_state
+add wave -position end  sim:/lab8_stage2_tb/DUT/CPU/PC
+restart -f
+run -all
+# PC = 000
+# PC = 001
+# PC = 002
+# PC = 003
+# PC = 004
+# PC = 005
+# PC = 006
+# PC = 007
+# PC = 008
+# PC = 009
+# Break key hit
+# Break in Module vDFFE at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/regfile.v line 83
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_stage2_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# PC = 000
+# PC = 001
+# PC = 002
+# PC = 003
+# PC = 004
+# PC = 005
+# PC = 006
+# PC = 007
+# PC = 008
+# PC = 009
+# PC = 00c
+# PC = 00d
+# PC = 00e
+# PC = 00f
+# PC = 010
+# PC = 011
+# PC = 012
+# PC = 013
+# PC = 014
+# PC = 015
+# PC = 016
+# PC = 017
+# PC = 00a
+# PC = 00b
+# PC = 00c
+# PASSED
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_stage2_tb.v(38)
+#    Time: 1710 ps  Iteration: 1  Instance: /lab8_stage2_tb
+# Break in Module lab8_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_stage2_tb.v line 38
