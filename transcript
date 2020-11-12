@@ -497,3 +497,5 @@ run -all
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_stage2_tb.v(38)
 #    Time: 1710 ps  Iteration: 1  Instance: /lab8_stage2_tb
 # Break in Module lab8_stage2_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_stage2_tb.v line 38
+# End time: 23:33:01 on Nov 12,2020, Elapsed time: 0:10:49
+# Errors: 0, Warnings: 0

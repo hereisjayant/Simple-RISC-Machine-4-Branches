@@ -1,2 +1,2 @@
-Stage 1, 2 and 3 done by Jayant Bhardwaj (57983801).
+All the stages are done by Jayant Bhardwaj (57983801).
 Includes all the design and implementation.
