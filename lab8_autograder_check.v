@@ -62,7 +62,8 @@ module lab8_check_tb;
         $display("        hint: check if your BLT instruction skipped MOV R3, result");
       $stop;
     end
-    if (DUT.MEM.mem[8'h14] !== 16'd850)  begin err = 1; $display("FAILED: mem[0x14] (result) is wrong;\n Actual: %h",DUT.MEM.mem[8'h14]); $stop; end
+    if (DUT.MEM.mem[8'h14] !== 16'd850)  begin err = 1; $display("FAILED: mem[0x14] (result) is wrong;\n Actual: %h \n
+                                                                  value of R3 %b",DUT.MEM.mem[8'h14], DUT.CPU.DP.REGFILE.R3); $stop; end
 
     if (~err) $display("INTERFACE OK");
     $stop;

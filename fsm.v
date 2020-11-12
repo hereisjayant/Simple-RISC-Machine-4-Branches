@@ -244,14 +244,14 @@ module control(   //inputs to fsm
       {`sDecode, 5'b001_00, 3'b000, 3'bx}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
       //For BEQ:
       {`sDecode, 5'b001_00, 3'b001, 3'bxx1}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
 
@@ -259,7 +259,7 @@ module control(   //inputs to fsm
       {`sDecode, 5'b001_00, 3'b010, 3'bxx0}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
 
@@ -267,13 +267,13 @@ module control(   //inputs to fsm
       {`sDecode, 5'b001_00, 3'b011, 3'b10x}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
       {`sDecode, 5'b001_00, 3'b011, 3'b01x}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
 
@@ -281,19 +281,19 @@ module control(   //inputs to fsm
       {`sDecode, 5'b001_00, 3'b100, 3'b10x}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
       {`sDecode, 5'b001_00, 3'b100, 3'b01x}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
       {`sDecode, 5'b001_00, 3'b100, 3'bxx1}: nextSignals = {`sB, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b010, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sB
 
@@ -301,7 +301,7 @@ module control(   //inputs to fsm
       {`sDecode, 5'b001_00, 6'bx}: nextSignals = {`sIF1, 2'b00, 1'b0,      // {state_next, vsel, write,
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
-                                            1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
+                                            1'b0, 1'b0, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
                                             3'b001, 1'b0   //pc_select, load_bl
                                             }; //sDecode->sIF1
 

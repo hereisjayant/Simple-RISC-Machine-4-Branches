@@ -426,3 +426,462 @@ run -all
 # ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(65)
 #    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
 # Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 65
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R2   200
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+restart -f
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R2   200
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# INTERFACE OK
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(69)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 69
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+run -all
+# Break key hit
+# Simulation stop requested.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+restart -f
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R2   200
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R2 00c8
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R3 0000000000010000
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1775 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R3 0000000000010000
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1685 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+restart -f
+restart -f
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R3 0000000000010000
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1685 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R3 0000000000010000
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1685 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: 00c8 
+# 
+# 
+#                                                                   value of R3 0000000000010100
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 1825 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+# Compile of fsm_tb.v was successful.
+# Compile of instructionDecoder.v was successful.
+# Compile of lab8_autograder_check.v was successful with warnings.
+# Compile of lab8_stage2_tb.v was successful.
+# Compile of ram.v was successful.
+# Compile of regfile.v was successful.
+# Compile of shifter.v was successful.
+# Compile of alu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fsm.v was successful.
+# Compile of lab8_top.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# Loading work.lab8_check_tb
+# Loading work.lab8_top
+# Loading work.cpu
+# Loading work.vDFFE
+# Loading work.Mux3h
+# Loading work.Mux2a
+# Loading work.InstructionDecoder
+# Loading work.Mux3H
+# Loading work.control
+# Loading work.vDFF
+# Loading work.datapath
+# Loading work.regfile
+# Loading work.Dec
+# Loading work.Mux8
+# Loading work.ALU
+# Loading work.AddSub
+# Loading work.Adder1
+# Loading work.shifter
+# Loading work.Mux4b
+# Loading work.equals
+# Loading work.RAM
+# Loading work.triStateBuffer
+# Loading work.enableSwitches
+# Loading work.enableLEDs
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R3 0000000000010000
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 945 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
+add watch \
+sim:/lab8_check_tb/DUT/CPU/FSM/present_state 
+add wave -position 11  sim:/lab8_check_tb/DUT/CPU/FSM/N
+add wave -position 12  sim:/lab8_check_tb/DUT/CPU/FSM/V
+add wave -position 13  sim:/lab8_check_tb/DUT/CPU/FSM/Z
+restart -f
+run -all
+# FAILED: mem[0x14] (result) is wrong;
+#  Actual: badd 
+# 
+# 
+#                                                                   value of R3 0000000000010000
+# ** Note: $stop    : C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v(66)
+#    Time: 945 ps  Iteration: 2  Instance: /lab8_check_tb
+# Break in Module lab8_check_tb at C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/Source_Files/lab8/CPEN211Lab8/lab8_autograder_check.v line 66
