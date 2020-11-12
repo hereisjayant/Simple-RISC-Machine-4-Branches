@@ -7,7 +7,7 @@
 `define SW                      5
 
 
-module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z);
+module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z, current_state);
 
 //I/Os
   input clk;

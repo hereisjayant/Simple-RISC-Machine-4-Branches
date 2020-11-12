@@ -49,45 +49,9 @@ module lab7_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5);
           .write_data (write_data),
           .N          (N),
           .V          (V),
-          .Z          (Z)    );
-
-
-  // assign HEX5[0] = ~Z;
-  // assign HEX5[6] = ~N;
-  // assign HEX5[3] = ~V;
-  // assign {HEX5[2:1],HEX5[5:4]} = 4'b1111;
-
-  // always @ ( * ) begin
-  //     if(SW[9:8]==2'b00)begin
-        // sseg H0(mem_addr[3:0], HEX0);
-        // sseg H1(mem_addr[7:4], HEX1);
-        // sseg H2(CPU.PC[3:0], HEX2);
-        // sseg H3(CPU.PC[7:4], HEX3);
-        // sseg H5({2'b0,mem_cmd}, HEX5);
-      // end
-      // else if(SW[9:8]==2'b11)begin
-      //   sseg H0(CPU.FSM.present_state[3:0], HEX0);
-      //   sseg H1({2'b0,CPU.FSM.present_state[5:4]}, HEX1);
-      //   sseg H2(4'b0, HEX2);
-      //   sseg H3(4'b0, HEX3);
-      //   sseg H5(mem_cmd, HEX5);
-    //   end
-    //   else if(SW[9:8]==2'b01)begin
-    //     sseg H0(read_data[3:0], HEX0);
-    //     sseg H1(read_data[7:4], HEX1);
-    //     sseg H2(read_data[11:8], HEX2);
-    //     sseg H3(read_data[15:12], HEX3);
-    //   end
-    //   else if(SW[9:8]==2'b10)begin
-    //    sseg H0(write_data[3:0], HEX0);
-    //    sseg H1(write_data[7:4], HEX1);
-    //    sseg H2(write_data[11:8], HEX2);
-    //    sseg H3(write_data[15:12], HEX3);
-    //   end
-    //
-    // end
-
-    // endcase
+          .Z          (Z),
+          .current_state(current_state)
+          );
 
 //------------------------------------------------------------------------------
   //Comparator for MREAD
