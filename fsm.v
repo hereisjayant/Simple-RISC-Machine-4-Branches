@@ -312,7 +312,7 @@ module control(   //inputs to fsm
                                             1'b0, 1'b0, 1'b0, 1'b0,   //  loada, loadb, asel, bsel,
                                             1'b0, 1'b0, 3'b000, 1'b0, //    loadc, loads, nsel, load_ir
                                             1'b0, 1'b1, 1'b0, 1'b0, 2'b0, //load_addr, load_pc, reset_pc, addr_sel, mem_cmd} = nextSignals
-                                            3'b010, 1'b0   //pc_select, load_bl
+                                            3'b001, 1'b0   //pc_select, load_bl
                                             }; // sB-> sIF1
 
 

@@ -106,7 +106,7 @@ module cpu(clk, reset, read_data, mem_cmd, mem_addr, write_data, N, V, Z, curren
 
   //NOTE: Lab 8 Addition:
   //PC Selector Mux:
-  Mux3h #(9) PCSelectorMux(.a2(BLRegOut), .a1(PC+ 1'b1 + sximm8), .a0(PC + 1'b1),
+  Mux3h #(9) PCSelectorMux(.a2(BLRegOut), .a1(PC+ 1'b1 + sximm8[8:0]), .a0(PC + 1'b1),
                           .s(pc_select), .b(PCSelector_to_PCReset));
 
   //PC Reset Mux

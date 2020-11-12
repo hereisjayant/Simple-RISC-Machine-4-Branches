@@ -45,7 +45,7 @@ module datapath(mdata,  //mdata is the 16-bit output of a memory block (Lab 7)
 
     input [15:0] mdata;  //inputs to datapath (used in lab7, not lab6) assign 0 for lab 6
     input [15:0] sximm8; //this is the actual input to look at in lab6
-    input [7:0] PC; //PC is the program counter used in lab8-> assign 0 for lab 6
+    input [8:0] PC; //PC is the program counter used in lab8-> assign 0 for lab 6
 
     input [1:0] vsel; //input to the first multiplexer b4 regfile
 
@@ -135,7 +135,7 @@ module datapath(mdata,  //mdata is the 16-bit output of a memory block (Lab 7)
   //NOTE: component9 needs to be changed ->done
     //Component9: Multiplexer before the regfile
     Mux4b #(16) BeforeRegfile(.a3(mdata), .a2(sximm8),
-                              .a1({8'b0,PC}), .a0(datapath_out),
+                              .a1({7'b0,PC}), .a0(datapath_out),
                               .s(vsel), .b(data_in));
 
     //Component6: Multiplexer after LoadA

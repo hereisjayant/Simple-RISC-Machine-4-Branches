@@ -5,6 +5,7 @@
 `define MREAD       2'b01
 `define MWRITE      2'b10
 `define sHALT       5'b01_100 //For STR/LDR
+`define SW                      5
 
 
 module lab8_top(KEY,SW,LEDR,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,CLOCK_50);
